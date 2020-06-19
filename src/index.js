@@ -1,14 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React, { Suspense, Fragment } from "react";
+import ReactDOM from "react-dom";
+import { SnackbarProvider } from "notistack";
+
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <Fragment>
+    <Suspense fallback={<div>Loading...</div>}>
+      <SnackbarProvider>
+        <App />
+      </SnackbarProvider>
+    </Suspense>
+  </Fragment>,
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change

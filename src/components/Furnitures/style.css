@@ -1,0 +1,10 @@
+.main {
+    /* background-image: url('/images/interior image 2.png'); */
+    background: url('/images/interior image 2.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    overflow: auto;
+}

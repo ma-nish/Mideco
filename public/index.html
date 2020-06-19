@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
@@ -24,6 +24,29 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/assets/images/favicon.png"
+    />
+
+    <!-- PAGE TITLE HERE -->
+    <title>Mideco</title>
+    <!-- MOBILE SPECIFIC -->
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1"
+    />
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/plugins.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/custom.css" />
+
     <title>React App</title>
   </head>
   <body>
@@ -39,5 +62,56 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <!-- JQUERY.MIN JS -->
+    <!-- <script src="assets/plugins/bootstrap/js/popper.min.js"></script> -->
+    <!-- BOOTSTRAP.MIN JS -->
+    <script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- BOOTSTRAP.MIN JS -->
+    <!-- <script src="assets/plugins/scroll/js/scrollbar.min.js"></script>scrollbar.MIN JS    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
+    <!-- <script>
+      // only for showcase
+      $(document).ready(function () {
+        $(
+          "#hide-signup, #hide-loginModal, #hide_fgt-pwd-show_otp, #hide_otp-show_changepwd"
+        ).click(function () {
+          $("#signupModal").modal("hide");
+          $("#loginModal").modal("hide");
+          $("#forgotpasswordModal").modal("hide");
+          $("#otpmodal").modal("hide");
+        });
+      });
+    </script> -->
+
+    <!-- <script>
+      $(function () {
+        //profile pic upload js
+        function readURL(input) {
+          if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+              $("#imagePreview").css(
+                "background-image",
+                "url(" + e.target.result + ")"
+              );
+              $("#imagePreview").hide();
+              $("#imagePreview").fadeIn(650);
+            };
+            reader.readAsDataURL(input.files[0]);
+          }
+        }
+        $("#imageUpload").change(function () {
+          readURL(this);
+        });
+      });
+    </script> -->
+    <!-- <script src="assets/plugins/bootstrap-datepicker/datepicker.min.js"></script>BOOTSTRAP.MIN JS    -->
+    <script src="/assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- jqueryUi.MIN JS -->
+    <script src="/assets/plugins/slick/slick.min.js"></script>
+    <!-- slick SLIDER -->
+    <script src="/assets/js/custom.min.js"></script>
+    <!-- CUSTOM FUCTIONS  -->
   </body>
 </html>
